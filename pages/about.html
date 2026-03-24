@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&amp;family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "outline-variant": "#c4c6cf",
+              "secondary": "#545f72",
+              "on-secondary-container": "#586377",
+              "on-primary-fixed": "#001b3d",
+              "surface-container-highest": "#e0e3e5",
+              "on-secondary": "#ffffff",
+              "tertiary-fixed-dim": "#C9A77D",
+              "on-primary": "#ffffff",
+              "on-tertiary-container": "#a8823d",
+              "inverse-surface": "#2d3133",
+              "primary-fixed": "#d6e3ff",
+              "inverse-primary": "#aec7f6",
+              "on-primary-container": "#c5d0e3",
+              "tertiary-fixed": "#ffdea9",
+              "outline": "#74777f",
+              "on-secondary-fixed": "#111c2c",
+              "background": "#f9f7f5",
+              "on-surface-variant": "#44474e",
+              "on-primary-fixed-variant": "#2d476f",
+              "secondary-fixed": "#d8e3fa",
+              "on-error": "#ffffff",
+              "secondary-fixed-dim": "#bcc7dd",
+              "surface-container-high": "#e6e8ea",
+              "surface-tint": "#465f88",
+              "primary": "#041024",
+              "surface-container-low": "#ebe6e1",
+              "on-secondary-fixed-variant": "#3c475a",
+              "on-surface": "#191c1e",
+              "on-background": "#191c1e",
+              "error-container": "#ffdad6",
+              "on-tertiary-fixed-variant": "#5e4200",
+              "surface-variant": "#e0e3e5",
+              "surface-bright": "#f7f9fb",
+              "surface-container": "#eceef0",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "primary-fixed-dim": "#aec7f6",
+              "on-tertiary-fixed": "#271900",
+              "surface": "#f5f3f0",
+              "inverse-on-surface": "#eff1f3",
+              "on-error-container": "#93000a",
+              "secondary-container": "#d5e0f7",
+              "tertiary": "#100800",
+              "error": "#ba1a1a",
+              "tertiary-container": "#2e1e00",
+              "surface-dim": "#d8dadc",
+              "primary-container": "#061651"
+            },
+            fontFamily: {
+              "headline": ["EB Garamond", "Georgia", "serif"],
+              "body": ["DM Sans", "system-ui", "sans-serif"],
+              "label": ["DM Sans", "system-ui", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .text-ink { color: #44474e; }
+        .bg-glass { background-color: rgba(247, 249, 251, 0.8); backdrop-filter: blur(20px); }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/75 backdrop-blur-xl border-b border-white/30 shadow-[0_8px_30px_rgba(0,10,30,0.08)]">
+<div class="flex flex-wrap justify-between items-center gap-4 w-full px-6 lg:px-8 py-4 max-w-screen-2xl mx-auto">
+<a class="flex items-center gap-2 shrink-0" href="../index.html">
+<img alt="Glovantis Group" class="h-9 w-auto" src="../images/logo.png"/>
+<span class="text-lg font-headline font-semibold text-primary-container hidden sm:inline">Glovantis Group</span>
+</a>
+<div class="hidden lg:flex flex-wrap items-center justify-end gap-x-5 text-sm font-headline">
+<a class="text-slate-600 hover:text-primary-container transition-colors" href="../index.html">Home</a>
+<a class="text-primary-container font-medium border-b-2 border-tertiary-fixed-dim pb-0.5" href="about.html">About</a>
+<a class="text-slate-600 hover:text-primary-container transition-colors" href="strategic-advisory.html">Strategic Advisory</a>
+<a class="text-slate-600 hover:text-primary-container transition-colors" href="real-estate.html">Real Estate</a>
+<a class="text-slate-600 hover:text-primary-container transition-colors" href="immigration.html">Immigration</a>
+<a class="text-slate-600 hover:text-primary-container transition-colors" href="geo.html">Geographies</a>
+<a class="text-slate-600 hover:text-primary-container transition-colors" href="contact.html">Contact</a>
+</div>
+<a class="bg-primary-container text-on-primary px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wide hover:opacity-90 transition-opacity" href="contact.html">Inquire</a>
+</div>
+</nav>
+<!-- Hero / Page Header -->
+<header class="relative pt-44 pb-28 px-8 overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-primary-container via-primary to-tertiary-container"></div>
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(255,255,255,0.18),transparent_40%)]"></div>
+<div class="absolute -right-20 top-4 w-[520px] h-[520px] bg-tertiary-fixed-dim/20 rounded-full blur-[90px]"></div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 relative z-10">
+<div class="md:col-span-8">
+<span class="label-sm text-tertiary-fixed tracking-[0.22em] font-bold uppercase mb-6 inline-flex items-center gap-3 px-4 py-2 rounded-full border border-tertiary-fixed/40 bg-white/10">02 · About</span>
+<h1 class="text-[clamp(3rem,8vw,5rem)] font-headline leading-[1.08] text-white tracking-tighter mb-6">About Glovantis Group</h1>
+<p class="text-white/80 max-w-2xl text-lg mb-8">An international platform for strategic advisory, investment facilitation, and institutional connectivity—operating along the Europe–Morocco–Gulf axis.</p>
+<div class="h-1 w-24 bg-tertiary-fixed-dim"></div>
+</div>
+<div class="md:col-span-4 md:justify-self-end self-end">
+<div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 text-white">
+<p class="text-xs uppercase tracking-[0.2em] text-tertiary-fixed mb-4">Tone</p>
+<p class="text-white/90 text-sm leading-relaxed">Institutional, precise, assured—English primary, French secondary.</p>
+</div>
+</div>
+</div>
+</header>
+<!-- Our vision -->
+<section class="py-24 px-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<h2 class="font-headline text-3xl text-primary mb-6">Our vision</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-3xl mb-8">
+                        Glovantis Group was founded with a clear vision: to build concrete bridges between high-potential markets, transforming international complexity into structured opportunity.
+                    </p>
+<p class="text-sm font-bold uppercase tracking-widest text-on-tertiary-container mb-4">We operate at the intersection of</p>
+<ul class="space-y-2 text-on-surface-variant list-disc pl-5 max-w-xl">
+<li>Strategic advisory</li>
+<li>Institutional relations</li>
+<li>International economic development</li>
+</ul>
+</div>
+</section>
+<!-- Our approach -->
+<section class="py-24 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<h2 class="font-headline text-3xl text-primary mb-12">Our approach</h2>
+<div class="grid gap-6 md:grid-cols-2">
+<div class="p-8 bg-surface-container-lowest rounded-xl border border-outline-variant/10">
+<h3 class="font-headline text-xl text-primary mb-3">Advanced geopolitical insight</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Deep understanding of the economic, regulatory, and political dynamics shaping the Europe–Morocco–Gulf corridor.</p>
+</div>
+<div class="p-8 bg-surface-container-lowest rounded-xl border border-outline-variant/10">
+<h3 class="font-headline text-xl text-primary mb-3">Operational market knowledge</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">On-the-ground presence and direct experience across our target markets.</p>
+</div>
+<div class="p-8 bg-surface-container-lowest rounded-xl border border-outline-variant/10">
+<h3 class="font-headline text-xl text-primary mb-3">Concrete execution capability</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">We do not limit ourselves to defining strategies. We implement, structure, and accompany them to completion.</p>
+</div>
+<div class="p-8 bg-surface-container-lowest rounded-xl border border-outline-variant/10">
+<h3 class="font-headline text-xl text-primary mb-3">Direct stakeholder access</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Established relationships with public and private decision-makers.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Our values -->
+<section class="py-24 px-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<h2 class="font-headline text-3xl text-primary mb-12">Our values</h2>
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="p-6 rounded-xl bg-white border border-outline-variant/15"><p class="font-bold text-primary mb-2">Excellence</p><p class="text-sm text-on-surface-variant">The highest standards in every project.</p></div>
+<div class="p-6 rounded-xl bg-white border border-outline-variant/15"><p class="font-bold text-primary mb-2">Integrity</p><p class="text-sm text-on-surface-variant">Transparency, responsibility, and trust.</p></div>
+<div class="p-6 rounded-xl bg-white border border-outline-variant/15"><p class="font-bold text-primary mb-2">Global connectivity</p><p class="text-sm text-on-surface-variant">Building bridges between markets.</p></div>
+<div class="p-6 rounded-xl bg-white border border-outline-variant/15"><p class="font-bold text-primary mb-2">Execution</p><p class="text-sm text-on-surface-variant">Turning strategy into concrete results.</p></div>
+<div class="p-6 rounded-xl bg-white border border-outline-variant/15 sm:col-span-2 lg:col-span-1"><p class="font-bold text-primary mb-2">Sustainability</p><p class="text-sm text-on-surface-variant">A long-term vision for sustainable impact.</p></div>
+</div>
+</div>
+</section>
+<!-- Connected ecosystem -->
+<section class="py-24 px-8 bg-primary text-white">
+<div class="max-w-7xl mx-auto">
+<h2 class="font-headline text-3xl mb-8">A connected ecosystem</h2>
+<p class="text-on-primary-container text-lg mb-8 max-w-2xl">Glovantis operates at the intersection of Europe, Morocco, and the Gulf, playing a key role in:</p>
+<ul class="space-y-3 text-white/90 list-disc pl-5 max-w-2xl">
+<li>Facilitating cross-border investments</li>
+<li>Connecting capital with opportunity</li>
+<li>Supporting economic development programs</li>
+<li>Activating public-private partnerships</li>
+</ul>
+</div>
+</section>
+<!-- Our founders -->
+<section class="py-24 px-8 bg-surface-container-lowest">
+<div class="max-w-4xl mx-auto">
+<h2 class="font-headline text-3xl text-primary mb-8">Our founders</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                        Glovantis Group was founded by Zaira Fatima Ezzahra Amali and Hayat Fassar. The founders represent a synthesis of international vision, expertise, and relational capability, with a strong orientation toward creating value across different markets.
+                    </p>
+<p class="text-sm font-bold uppercase tracking-widest text-on-tertiary-container mb-4">Their leadership guides the group with</p>
+<ul class="space-y-2 text-on-surface-variant list-disc pl-5 mb-12">
+<li>Strategic excellence</li>
+<li>Institutional credibility</li>
+<li>Global vision</li>
+<li>Long-term relationship building</li>
+</ul>
+<div class="text-center">
+<a class="inline-flex items-center justify-center bg-primary-container text-on-primary px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:opacity-90 transition-opacity" href="contact.html">Contact Glovantis Group</a>
+</div>
+</div>
+</section>
+<footer class="border-t border-outline-variant/20 bg-surface-container-low py-12 px-8">
+<div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row flex-wrap justify-between gap-8 text-sm text-on-surface-variant">
+<p class="max-w-md">Glovantis Group — Connecting Europe, Morocco and the Gulf. Structuring global opportunities.</p>
+<div class="flex flex-wrap gap-6">
+<a class="hover:text-primary-container transition-colors" href="contact.html">Contact</a>
+<a class="hover:text-primary-container transition-colors" href="https://www.linkedin.com" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+<a class="hover:text-primary-container transition-colors" href="#">Privacy Policy</a>
+</div>
+<p class="text-xs uppercase tracking-widest">© 2026 Glovantis Group</p>
+</div>
+</footer>
+</body></html>
